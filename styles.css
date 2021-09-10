@@ -1,7 +1,8 @@
 /* Master styles */
 body {
-    font-family: "Lato", sans-serif;
+    font-family: 'HK Grotesk', 'Helvetica', sans-serif;
     margin: 0px;
+    background-color: #dcdcdc;
 }
 
 .container {
@@ -14,6 +15,11 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 38px;
+    /*background-color:#001f3f;*/
+    background-color: #222222;
+    font-size: 1.2em;
+    /*color: hsla(210, 100%, 75%, 1.0);*/
+    color: #CFD8DC;
 }
 
 .left-side {
@@ -22,7 +28,6 @@ body {
 
 .nav-wrapper > .left-side > div {
     margin-right: 20px;
-    font-size: 0.9em;
     text-transform: uppercase;
 }
 
@@ -39,19 +44,19 @@ body {
 }
 
 .nav-link-wrapper:hover {
-    border-bottom: 0.5px solid black;
+    border-bottom: 0.5px solid #CFD8DC;
 }
 
 .nav-link-wrapper a:hover {
-    color: black;
+    color: #CFD8DC;
 }
 
 .active-nav-link {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #CFD8DC;
 }
 
 .active-nav-link a {
-    color: black !important;
+    color: #CFD8DC !important;
 }
 
 .github-link a {
@@ -67,6 +72,7 @@ body {
 }
 
 .portfolio-item-wrapper {
+    size: 50%;
     position: relative;
 }
 
@@ -98,12 +104,10 @@ body {
 
 .img-text-wrapper .subtitle {
     transition: 1s;
-    font-weight: 600;
     color: transparent;
 }
 
 .img-text-wrapper:hover .subtitle {
-    font-weight: 600;
     color: whitesmoke;
 }
 
@@ -124,17 +128,68 @@ body {
 }
 
 .profile-image-wrapper img {
-    padding-left: 50px;
+    padding-top: 30px;
+    padding-left: 80px;
     width: 70%;
+    border-radius: 40%;
 }
 
-.profile-content-wrapper {
+.profile-content-wrapper { 
+    margin-top: 125px;
+    border-radius: 25px;
     padding: 30px;
+    border: 3px solid darkgray;
+    padding: 20px;
+    width: 450px;
+    height: 300px;
 }
 
 .profile-content-wrapper h1 {  
     color: black;  
 }
+
+.profile-content-wrapper p {
+    font-size: larger;
+}
+
+/* Contact page */
+.contact-items-wrapper {
+    margin: 20px auto;
+    width:400px;
+    height:400px;
+    background-color:#dcdcdc;
+    display:grid;
+    grid-template-columns: 200px 200px;
+    grid-row: auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.contact-item-wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.contacts-logo img {
+    width: 150px;
+    height: auto;
+    display: inline-block;
+    border-radius: 60px;
+    border: 2px solid #888;
+    padding: 0.5em 0.6em;
+}
+
+.contact-info p {
+    padding-top: 30px;
+    padding-left: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+
 
 .footer {
     /*
